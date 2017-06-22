@@ -2,32 +2,64 @@
 <html ng-app='app'>
   <head>
     <meta charset="utf-8">
-    <title>Oh My Flowers!</title>
+    <title>Oh My Flowers</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body ng-controller='mainCtrl'>
 
-    <h1></h1>
-
 
     <header>
+      <div>
+        <h3>
+          <span class="ohMy">Oh My</span>
+          <span class="flowers">Flowers</span>
+          <span class="studio">Studio Of Stylish Flowers</span>
+        </h3>
+
+        <div class='soc_med_logos'>
+          <a sref='https://www.facebook.com/ohmyweddingdayutah/'><img class="facebook_logo" src="http://ohmyweddingday.com/images/f.png"></a>
+
+          <a sref='https://www.instagram.com/utah_floral'>
+          <img class="instagram_logo" src="http://ohmyweddingday.com/images/i.png"></a>
+        </div>
+
+      </div>
+
       <nav>
         <div><a ui-sref='home'>Home</a></div>
+        <div><a ui-sref='about'>About</a></div>
         <div><a ui-sref='prices'>Prices</a></div>
         <div><a ui-sref='contacts'>Contact</a></div>
-        <div><a ui-sref='about'>About</a></div>
+
       </nav>
+
     </header>
 
-    <br>
-
-
+    <!-- <br> -->
 
 
 
 <ui-view></ui-view>
+
+<footer>
+
+  <div class="bottom_company_info">
+    <div class="ohMyFlowers">Oh My Flowers</div>
+    <div class="studio_of_stylish_flowers">Studio Of Stylish Flowers</div>
+
+    <br>
+
+
+    <div class='copyright'>Oh My Flowers © 2017</div>
+    <div class='co_cont'>Studio Of Stylish Flowers</div></span>
+  </div>
+
+</footer>
 
 <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js'>
 </script>

@@ -44,4 +44,8 @@ angular.module('app', ['ui.router'])
         templateUrl: './views/funeral.html'
       })
 
+      .state('everydayFlowers', {
+        url: '/everydayFlowers',
+        templateUrl: './views/everydayFlowers.html'
+      })
   });
