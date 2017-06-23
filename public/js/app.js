@@ -24,28 +24,10 @@ angular.module('app', ['ui.router'])
         templateUrl: './views/about.html'
       })
 
-      .state('boutonniere', {
-        url: '/boutonniere',
-        templateUrl: './views/boutonniere.html'
+      .state('detail', {
+        url: '/detail/:Type', 
+        templateUrl: './views/detail.html',
+        controller: 'detailCtrl'
       })
 
-      .state('bridalBouquet', {
-        url: '/bridalBouquet',
-        templateUrl: './views/bridalBouquet.html'
-      })
-
-      .state('corsage', {
-        url: '/corsage',
-        templateUrl: './views/corsage.html'
-      })
-
-      .state('funeral', {
-        url: '/funeral',
-        templateUrl: './views/funeral.html'
-      })
-
-      .state('everydayFlowers', {
-        url: '/everydayFlowers',
-        templateUrl: './views/everydayFlowers.html'
-      })
   });
