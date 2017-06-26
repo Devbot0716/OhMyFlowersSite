@@ -15,4 +15,19 @@ angular.module('app')
         return response.data;
       })
     }
+
+    this.getDetails = function(ID){
+      return $http ({
+        method: 'GET',
+        url: localhost + '/getDetails/' + ID
+        
+      }).then(function(response){
+        return response.data;
+      })
+    }
+
+
+
+
+    //Create another $http call to /getDetails/ + ID
   })

@@ -24,10 +24,16 @@ angular.module('app', ['ui.router'])
         templateUrl: './views/about.html'
       })
 
-      .state('detail', {
-        url: '/detail/:Type', 
-        templateUrl: './views/detail.html',
-        controller: 'detailCtrl'
+      .state('images', {
+        url: '/images/:Type',
+        templateUrl: './views/images.html',
+        controller: 'imagesCtrl'
+      })
+
+      .state('details', {
+        url: '/details/:id',
+        templateUrl: './views/details.html',
+        controller: 'detailsCtrl'
       })
 
   });
