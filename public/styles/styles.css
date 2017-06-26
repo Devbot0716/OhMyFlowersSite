@@ -189,11 +189,16 @@ text-align: center;
 /**********************CONTACTS PAGE******************/
 
 .contact_pic {
-  
+
 }
 
 .contact_page {
   text-align: left;
+}
+
+.contact_page img {
+  background-image: url('./images/Wedding_Table.jpg');
+  width: 100%;
 }
 
 .contact_me_box {

@@ -36,4 +36,10 @@ angular.module('app', ['ui.router'])
         controller: 'detailsCtrl'
       })
 
+      .state('swapi', {
+        url: '/swapi',
+        templateUrl: './views/swapi.html',
+        controller: 'swapiCtrl'
+      })
+
   });
