@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const massive = require('massive')
 const config = require('./config.js')
 const controller = require('./serverCtrl.js')
+const cors = require('cors')
 
 massive(config.database).then(db => {
     app.set('db', db)
@@ -12,7 +13,7 @@ massive(config.database).then(db => {
 
 var app = express()
 app.use(bodyParser.json())
-
+app.use(cors());
 app.get('/getAll', controller.getAll)
 app.get('/getDetails/:ID', controller.getDetails)
 app.get('/getImages/:Type', controller.getImages)

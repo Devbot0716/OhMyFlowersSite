@@ -20,14 +20,20 @@ angular.module('app')
       return $http ({
         method: 'GET',
         url: localhost + '/getDetails/' + ID
-        
+
       }).then(function(response){
         return response.data;
       })
     }
 
 
+    this.getQuotes = function(){
+      return $http ({
+        method: 'GET',
+        url: 'http://quotes.rest/qod.json'
+      }).then(function(response){
+        return response.data;
+      })
+    }
 
-
-    //Create another $http call to /getDetails/ + ID
   })

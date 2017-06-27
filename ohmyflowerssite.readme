@@ -1,0 +1,7 @@
+This starts with gulp and live-server simultaneously.
+
+Listens on port 3000.
+
+Uses SQL, NodeJs for backend, and AngularJs for front end.
+
+I've created my own database and pulled two other APIs for this project.

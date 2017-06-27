@@ -15,7 +15,8 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
     templateUrl: './views/contacts.html'
   }).state('about', {
     url: '/about',
-    templateUrl: './views/about.html'
+    templateUrl: './views/about.html',
+    controller: 'aboutCtrl'
   }).state('images', {
     url: '/images/:Type',
     templateUrl: './views/images.html',
@@ -24,10 +25,14 @@ angular.module('app', ['ui.router']).config(function ($stateProvider, $urlRouter
     url: '/details/:id',
     templateUrl: './views/details.html',
     controller: 'detailsCtrl'
-  }).state('swapi', {
-    url: '/swapi',
-    templateUrl: './views/swapi.html',
-    controller: 'swapiCtrl'
+  });
+});
+'use strict';
+
+angular.module('app').controller('aboutCtrl', function ($scope, mainSvc) {
+  mainSvc.getQuotes().then(function (response) {
+    $scope.quotes = response.contents.quotes;
+    console.log($scope.quotes);
   });
 });
 'use strict';
@@ -106,28 +111,11 @@ angular.module('app').service('mainSvc', function ($http) {
     });
   };
 
-  //Create another $http call to /getDetails/ + ID
-});
-'use strict';
-
-angular.module('app').controller('swapiCtrl', function ($scope, $statParams, swapiSvc) {
-  console.log('swapictrl');
-
-  $scope.getSwapiInfo = function (name, species) {
-    console.log(name);
-    swapiSvc.getSwapiInfo(name, species).then(function (response) {
-      console.log(response);
-      $scope.swapiInfo = response.name;
-    });
-  };
-});
-'use strict';
-
-angular.module('app').service('swapiSvc', function ($http) {
-
-  this.getSwapiInfo = function (name, species) {
-    console.log('swapi');
-    return $http.get('http://swapi.co/api/' + '&name=' + name + '&species=' + species).then(function (response) {
+  this.getQuotes = function () {
+    return $http({
+      method: 'GET',
+      url: 'http://quotes.rest/qod.json'
+    }).then(function (response) {
       return response.data;
     });
   };
