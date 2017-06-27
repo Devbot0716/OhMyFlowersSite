@@ -186,6 +186,14 @@ text-align: center;
   /*padding-right: 55vh;*/
 }
 
+ .quote {
+  font: 400 25px/0.8 'Great Vibes', Helvetica, sans-serif;
+}
+
+.author {
+  font: 400 25px/0.8 , Helvetica, sans-serif;
+}
+
 /**********************CONTACTS PAGE******************/
 
 .contact_pic {
