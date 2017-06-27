@@ -16,7 +16,7 @@ angular.module('app')
       })
     }
 
-    this.getDetails = function(ID){
+    this.getDetails = (ID)=>{
       return $http ({
         method: 'GET',
         url: localhost + '/getDetails/' + ID
@@ -35,5 +35,7 @@ angular.module('app')
         return response.data;
       })
     }
+
+    
 
   })

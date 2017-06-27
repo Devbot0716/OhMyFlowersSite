@@ -53,6 +53,14 @@ angular.module('app').directive('footerDir', function () {
 });
 'use strict';
 
+angular.module('app').controller('headerCtrl', function ($scope, mainSvc) {
+  mainSvc.receiveCalendar().then(function (response) {
+    $scope.calendar = response.id;
+    console.log($scope.calendar);
+  });
+});
+'use strict';
+
 angular.module('app').directive('headerDir', function () {
   return {
     templateUrl: './views/header.html'
