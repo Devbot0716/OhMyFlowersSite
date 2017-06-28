@@ -36,6 +36,13 @@ angular.module('app')
       })
     }
 
-    
+    this.getUsers = ()=>{
+      return $http ({
+        method: 'GET',
+        url: 'https://randomuser.me/api/'
+      }).then(function(response){
+        return response.data;
+      })
+    }
 
   })

@@ -1,7 +1,7 @@
 
 <div class="about_me_page">
 
-  <h4 class='inspirational_quotes' placeholder='inspirational quote hered'>
+  <h4 class='inspirational_quotes'>
     <span class='quote'>"{{quotes[0].quote}}"</span>
     <span class='author'>-{{quotes[0].author}}</span>
   </h4>
@@ -18,5 +18,55 @@
     <li>Working with me, I guarantee you will always get a beautifyl and STYLISH arrangement that you, your friends or relatives will be amazed at!</li>
 
   </ul>
+
+
+
+</div>
+
+<div class="reviews">
+
+  <p>Reviews by customers:</p>
+  <br>
+  <p>"Yulia met my needs and she does absolutely gorgeous arrangments that are professionally designed. Thank you, Yulia!"</p>
+
+<br>
+
+  <img src="{{users[0].picture.thumbnail}}">
+  -{{users[0].name.first}}
+  {{users[0].name.last}}
+  <br>
+  From {{users[0].location.city}},
+  {{users[0].location.state}}
+<br>
+<br>
+<br>
+
+<p>"We loved the beautiful arrangement Yulia made for our wedding photos! They made all the difference and made our reception just beautiful!"</p>
+
+<br>
+  <img src="{{users[0].picture.thumbnail}}">
+  -{{users[0].name.first}}
+  {{users[0].name.last}}
+  <br>
+  From {{users[0].location.city}},
+  {{users[0].location.state}}
+<br>
+<br>
+<br>
+
+<p>"Our funeral arrangment was wonderfully stunning and was completely appriopriate for the occasion. It brought about a special feeling in the room and brought some happiness to a sad occasion. Would definitely recommend Yulia's services and will be ordering from her in the future."</p>
+
+<br>
+  <img src="{{users[0].picture.thumbnail}}">
+  -{{users[0].name.first}}
+  {{users[0].name.last}}
+  <br>
+  From {{users[0].location.city}},
+  {{users[0].location.state}}
+<br>
+<br>
+
+<input type="text" placeholder="Write a review" value="">
+<button type="button" name="button">Post</button>
 
 </div>

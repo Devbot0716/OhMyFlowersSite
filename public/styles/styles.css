@@ -97,7 +97,7 @@ footer {
 
 
 .ohMyFlowers {
-  font: 400 100px/0.8 'Great Vibes', Helvetica, sans-serif;
+  font: 400 70px/0.8 'Great Vibes', Helvetica, sans-serif;
   color: #6B6B6B;
   text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
   width: 100%;
@@ -164,7 +164,6 @@ text-align: center;
 
 .about_me_page {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding-top: 8vh;
@@ -177,22 +176,31 @@ text-align: center;
 .about_pic {
   width: 40vh;
   height: 40vh;
-  /*padding-left: 20vh;*/
 }
 
 .about_me_info {
   text-align: left;
   font-family: sans-serif;
-  /*padding-right: 55vh;*/
+  margin-top: 1vh;
+  margin-bottom: auto;
+
 }
 
  .quote {
   font: 400 25px/0.8 'Great Vibes', Helvetica, sans-serif;
+  justify-content: flex-end;
 }
 
 .author {
   font: 400 25px/0.8 , Helvetica, sans-serif;
 }
+
+.reviews {
+  /*background-color: lightgray;*/
+  border-style: groove 1px gray;
+}
+
+
 
 /**********************CONTACTS PAGE******************/
 

@@ -34,6 +34,11 @@ angular.module('app').controller('aboutCtrl', function ($scope, mainSvc) {
     $scope.quotes = response.contents.quotes;
     console.log($scope.quotes);
   });
+
+  mainSvc.getUsers().then(function (response) {
+    $scope.users = response.results;
+    console.log($scope.users);
+  });
 });
 'use strict';
 
@@ -51,14 +56,7 @@ angular.module('app').directive('footerDir', function () {
     templateUrl: './views/footer.html'
   };
 });
-'use strict';
-
-angular.module('app').controller('headerCtrl', function ($scope, mainSvc) {
-  mainSvc.receiveCalendar().then(function (response) {
-    $scope.calendar = response.id;
-    console.log($scope.calendar);
-  });
-});
+"use strict";
 'use strict';
 
 angular.module('app').directive('headerDir', function () {
@@ -123,6 +121,15 @@ angular.module('app').service('mainSvc', function ($http) {
     return $http({
       method: 'GET',
       url: 'http://quotes.rest/qod.json'
+    }).then(function (response) {
+      return response.data;
+    });
+  };
+
+  this.getUsers = function () {
+    return $http({
+      method: 'GET',
+      url: 'https://randomuser.me/api/'
     }).then(function (response) {
       return response.data;
     });
