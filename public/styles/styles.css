@@ -174,9 +174,21 @@ text-align: center;
 .about_pic {
   width: 40vh;
   height: 40vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+}
+
+ .quote {
+  font: 400 35px/0.8 'Great Vibes', Helvetica, sans-serif;
+}
+
+.author {
+  font: 400 25px/0.8 , Helvetica, sans-serif;
+}
+
+.pic_n_quote {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .about_me_info {
@@ -184,17 +196,6 @@ text-align: center;
   font-family: sans-serif;
   margin-top: 1vh;
   margin-bottom: auto;
-
-}
-
- .quote {
-  font: 400 25px/0.8 'Great Vibes', Helvetica, sans-serif;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.author {
-  font: 400 25px/0.8 , Helvetica, sans-serif;
 }
 
 .reviews {

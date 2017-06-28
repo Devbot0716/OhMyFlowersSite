@@ -21,3 +21,11 @@ app.get('/getImages/:Type', controller.getImages)
 app.listen(3000, function(){
   console.log("listening on port 3000")
 })
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "http://localhost:8080");
+  res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.header("Access-Control-Allow-Headers", "Origin, x-access-token , X-Requested-With, Content-Type, Accept, Authorization, Access-Control-Allow-Credentials");
+  res.header("Access-Control-Allow-Credentials", "true");
+  next();
+});
