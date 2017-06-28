@@ -34,36 +34,58 @@
 <div class="reviews">
 
   <p style='text-decoration: underline'>Reviews by customers:</p>
+
   <br>
+
+<div class='user1_box'>
+
+  <img class="user1_pic" src="{{users1[0].picture.thumbnail}}">
+
   <p>"Yulia met my needs and she does absolutely gorgeous arrangments that are professionally designed. Thank you, Yulia!"</p>
 
-  <img src="{{users1[0].picture.thumbnail}}">
-  -{{users1[0].name.first}}
+  <p class='user1'>-{{users1[0].name.first}}
   {{users1[0].name.last}}
-  From {{users1[0].location.city}},
-  {{users1[0].nat}}
+   ({{users1[0].location.city}},
+  {{users1[0].nat}})</p>
+
+</div>
+
 <br>
 <br>
 <br>
 
-<p>"We loved the beautiful arrangement Yulia made for our wedding photos! They made all the difference and made our reception just beautiful!"</p>
+<div class='user2_box'>
 
-  <img src="{{users2[0].picture.thumbnail}}">
-  -{{users2[0].name.first}}
+
+  <img class="user2_pic" src="{{users2[0].picture.thumbnail}}">
+
+  <p>"We loved the beautiful arrangement Yulia made for our wedding photos! They made all the difference and made our reception just beautiful!"</p>
+
+  <p class='user2'>-{{users2[0].name.first}}
   {{users2[0].name.last}}
-  From {{users2[0].location.city}},
-  {{users2[0].nat}}
+  ({{users2[0].location.city}},
+  {{users2[0].nat}})</p>
+
+</div>
+
 <br>
 <br>
 <br>
 
-<p>"Our funeral arrangment was wonderfully stunning and was completely appriopriate for the occasion. It brought about a special feeling in the room and brought some happiness to a sad occasion. Would definitely recommend Yulia's services and will be ordering from her in the future."</p>
+<div class='user3_box'>
 
-  <img src="{{users3[0].picture.thumbnail}}">
-  -{{users3[0].name.first}}
+
+  <img class="user3_pic" src="{{users3[0].picture.thumbnail}}">
+
+  <p>"Our funeral arrangment was wonderfully stunning and was completely appriopriate for the occasion. It brought about a special feeling in the room and brought some happiness to a sad occasion. Would definitely recommend Yulia's services and will be ordering from her in the future."</p>
+
+  <p class='user3'>-{{users3[0].name.first}}
   {{users3[0].name.last}}
-  From {{users3[0].location.city}},
-  {{users3[0].nat}}
+  ({{users3[0].location.city}},
+  {{users3[0].nat}})</p>
+
+</div>
+
 <br>
 <br>
 

@@ -55,11 +55,9 @@ h3 {
   padding-right: 15px;
   height: 40px;
   width: 40px;
-
 }
 
 .instagram_logo {
-
   height: 40px;
   width: 40px;
 }
@@ -85,6 +83,8 @@ nav a:hover {
   color: #DFB5B5;
 }
 
+
+/********FOOTER***********/
 
 footer {
   width: 100%;
@@ -171,6 +171,13 @@ text-align: center;
   height: 100%;
 }
 
+/*.pic_n_quote {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}*/
+
 .about_pic {
   width: 40vh;
   height: 40vh;
@@ -184,13 +191,6 @@ text-align: center;
   font: 400 25px/0.8 , Helvetica, sans-serif;
 }
 
-.pic_n_quote {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
 .about_me_info {
   text-align: left;
   font-family: sans-serif;
@@ -199,14 +199,48 @@ text-align: center;
 }
 
 .reviews {
-  /*background-color: lightgray;*/
-  border-style: groove;
-}
-input {
-  display: flex;
-  justify-content: center;
+  background-color: #F0F0F0;
+  border-style: solid;
 }
 
+.user1 {
+  text-transform: capitalize;
+}
+
+.user2 {
+  text-transform: capitalize;
+}
+
+.user3 {
+  text-transform: capitalize;
+}
+
+.user1_pic {
+  border-style: groove;
+}
+
+.user2_pic {
+  border-style: groove;
+}
+
+.user3_pic {
+  border-style: groove;
+}
+
+.user1_box {
+  border-style: ridge;
+  background-color: white;
+}
+
+.user2_box {
+  border-style: ridge;
+  background-color: white;
+}
+
+.user3_box {
+  border-style: ridge;
+  background-color: white;
+}
 
 
 /**********************CONTACTS PAGE******************/

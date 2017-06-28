@@ -14,6 +14,7 @@ VALUES ('./images/Veteran.jpg', 'everydayFlowers', 'This is a veteran arrangemen
 
 ('./images/boutonniere.jpg', 'boutonniere', 'This is a boutonniere', 'boutonniere', '$14.99'),
 
-('./images/corsage.png', 'corsage', 'This is a corsage', 'corsage', '$19.99'),
+('./images/corsage.png', 'corsage', 'This is a corsage',
+  'corsage', '$19.99'),
 
 ('./images/FuneralPiece.jpg', 'funeralArrangement', 'This is a funeral arrangment', 'Funeral Arrangement', '$89.99')
