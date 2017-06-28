@@ -163,9 +163,7 @@ text-align: center;
 /*******************ABOUT PAGE*******************/
 
 .about_me_page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   padding-top: 8vh;
   padding-bottom: 8vh;
   padding-left: 32vh;
@@ -176,6 +174,9 @@ text-align: center;
 .about_pic {
   width: 40vh;
   height: 40vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .about_me_info {
@@ -189,6 +190,7 @@ text-align: center;
  .quote {
   font: 400 25px/0.8 'Great Vibes', Helvetica, sans-serif;
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .author {
@@ -197,7 +199,11 @@ text-align: center;
 
 .reviews {
   /*background-color: lightgray;*/
-  border-style: groove 1px gray;
+  border-style: groove;
+}
+input {
+  display: flex;
+  justify-content: center;
 }
 
 

@@ -35,9 +35,19 @@ angular.module('app').controller('aboutCtrl', function ($scope, mainSvc) {
     console.log($scope.quotes);
   });
 
-  mainSvc.getUsers().then(function (response) {
-    $scope.users = response.results;
-    console.log($scope.users);
+  mainSvc.getUsers1().then(function (response) {
+    $scope.users1 = response.results;
+    console.log($scope.users1);
+  });
+
+  mainSvc.getUsers2().then(function (response) {
+    $scope.users2 = response.results;
+    console.log($scope.users2);
+  });
+
+  mainSvc.getUsers3().then(function (response) {
+    $scope.users3 = response.results;
+    console.log($scope.users3);
   });
 });
 'use strict';
@@ -126,7 +136,25 @@ angular.module('app').service('mainSvc', function ($http) {
     });
   };
 
-  this.getUsers = function () {
+  this.getUsers1 = function () {
+    return $http({
+      method: 'GET',
+      url: 'https://randomuser.me/api/'
+    }).then(function (response) {
+      return response.data;
+    });
+  };
+
+  this.getUsers2 = function () {
+    return $http({
+      method: 'GET',
+      url: 'https://randomuser.me/api/'
+    }).then(function (response) {
+      return response.data;
+    });
+  };
+
+  this.getUsers3 = function () {
     return $http({
       method: 'GET',
       url: 'https://randomuser.me/api/'

@@ -36,7 +36,25 @@ angular.module('app')
       })
     }
 
-    this.getUsers = ()=>{
+    this.getUsers1 = ()=>{
+      return $http ({
+        method: 'GET',
+        url: 'https://randomuser.me/api/'
+      }).then(function(response){
+        return response.data;
+      })
+    }
+
+    this.getUsers2 = ()=>{
+      return $http ({
+        method: 'GET',
+        url: 'https://randomuser.me/api/'
+      }).then(function(response){
+        return response.data;
+      })
+    }
+
+    this.getUsers3 = ()=>{
       return $http ({
         method: 'GET',
         url: 'https://randomuser.me/api/'
