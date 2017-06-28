@@ -1,7 +1,11 @@
-This starts with gulp and live-server simultaneously.
+***********README***********
+
+To start this app, run gulp and live-server simultaneously in your terminal.
 
 Listens on port 3000.
 
-Uses SQL, NodeJs for backend, and AngularJs for front end.
+Uses SQL (postgres, elephantSQL.com to make the API), NodeJs for backend, and AngularJs for front end.
 
-I've created my own database and pulled two other APIs for this project.
+
+
+I've created my own small, flower database using elephantSQL and pulled two other APIs for this project. One is a quotes API and the other is a random user API for fake reviews until I can learn how to make an input box that will let users input their own, personal reviews.
