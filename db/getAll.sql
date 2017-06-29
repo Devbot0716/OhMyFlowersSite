@@ -1,1 +1,1 @@
-SELECT * FROM Arrangements
+SELECT * FROM arrangements

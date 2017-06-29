@@ -1,13 +1,13 @@
-CREATE TABLE Arrangements (
-   Images varchar(255), --varchar is for strings
-   Type varchar(255),
-   Description varchar(255),
-   Name varchar(255),
-   Price varchar(255),
-   ID SERIAL PRIMARY KEY
+CREATE TABLE arrangements (
+   images varchar(255), --varchar is for strings
+   type varchar(255),
+   description varchar(255),
+   name varchar(255),
+   price varchar(255),
+   id SERIAL PRIMARY KEY
 )
 
-INSERT INTO Arrangements (Images, Type, Description, Name, Price)
+INSERT INTO arrangements (images, type, description, name, price)
 VALUES ('./images/Veteran.jpg', 'everydayFlowers', 'This is a veteran arrangement', 'everydayFlowers', '$49.99'),
 
 ('./images/BridalBouquet.jpg', 'bridalBouquet', 'This is a Bridal Bouquet', 'Bridal Bouquet', '$129.99'),
@@ -17,4 +17,4 @@ VALUES ('./images/Veteran.jpg', 'everydayFlowers', 'This is a veteran arrangemen
 ('./images/corsage.png', 'corsage', 'This is a corsage',
   'corsage', '$19.99'),
 
-('./images/FuneralPiece.jpg', 'funeralArrangement', 'This is a funeral arrangment', 'Funeral Arrangement', '$89.99')
+('./images/FuneralPiece.jpg', 'funeralArrangement', 'This is a funeral arrangment', 'Funeral Arrangement', '$89.99');

@@ -1,3 +1,3 @@
-SELECT Images, ID
+SELECT images, id
 FROM arrangements
 WHERE type = $1;
