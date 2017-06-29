@@ -39,27 +39,31 @@ h3 {
   text-shadow: none;
 }
 
-
-
-.soc_med_logos {
+.soc_med {
   float: right;
-  padding-right: 50px;
+  padding-right: 150px;
   font-family: sans-serif;
-  height: 200px;
-  width: 300px;
+  height: 300px;
   border-color: 2px gray;
-  /*background-color: blue;*/
+}
+
+#follow_text{
+
 }
 
 .facebook_logo{
   padding-right: 15px;
   height: 40px;
-  width: 40px;
+  width: 37px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .instagram_logo {
   height: 40px;
-  width: 40px;
+  width: 37px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 nav {
@@ -67,7 +71,7 @@ nav {
   font-size: 25px;
   height: 15px;
   font-family: sans-serif;
-  font-weight: 10;
+
   /*line-height: 10px;*/
   flex-direction: row;
   align-items: center;
@@ -171,20 +175,40 @@ text-align: center;
   height: 100%;
 }
 
-/*.pic_n_quote {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-end;
-}*/
+.about_yu_text {
+  font: 400 100px/0.8 'Great Vibes', Helvetica, sans-serif;
+  text-align: center;
+}
+
+.pic_n_quote {
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
 
 .about_pic {
-  width: 40vh;
-  height: 40vh;
+  width: 375px;
+  height: 380px;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
+  display: flex;
+  padding: 10px;
+}
+
+.quote_author_box {
+  text-align: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
 }
 
  .quote {
-  font: 400 35px/0.8 'Great Vibes', Helvetica, sans-serif;
+  font: 30px Helvetica, sans-serif;
+
 }
 
 .author {
@@ -192,19 +216,22 @@ text-align: center;
 }
 
 .about_me_info {
-  text-align: left;
+  text-align: center;
   font-family: sans-serif;
   margin-top: 1vh;
   margin-bottom: auto;
+
 }
 
 .reviews {
-  background-color: #F0F0F0;
+  background-color: #EBBCBC;
   border-style: solid;
+  box-shadow: 5px 5px 5px #888;
 }
 
 .user1 {
   text-transform: capitalize;
+
 }
 
 .user2 {
@@ -230,16 +257,19 @@ text-align: center;
 .user1_box {
   border-style: ridge;
   background-color: white;
+  box-shadow: 5px 5px 5px #888;
 }
 
 .user2_box {
   border-style: ridge;
   background-color: white;
+  box-shadow: 5px 5px 5px #888;
 }
 
 .user3_box {
   border-style: ridge;
   background-color: white;
+  box-shadow: 5px 5px 5px #888;
 }
 
 
@@ -257,7 +287,15 @@ text-align: center;
   padding: 0 10em 1em 10em;
 text-align: center;
 background: url(../images/diag.jpg),#ebbcbc;
+box-shadow: 5px 5px 5px #888;
 /* border-bottom: 1px solid rgb(235, 188, 188); */
 /* border-bottom: 1px solid rgb(235, 188, 188); */
 /* border-bottom: 1px solid rgb(235, 188, 188);*/
 }
+
+/*input {
+  box-shadow: 5px 5px 5px #888;
+}
+button {
+  box-shadow: 5px 5px 5px #888;
+}*/

@@ -1,5 +1,5 @@
 <div ui-sref='details({id:image.id})' ng-repeat='image in images'>
-  <img src='{{image.images}}'>
+  <img ng-src='{{image.images}}'> <!-- 'ng' needs to be before source because... angular.-->
 </div>
 
 
