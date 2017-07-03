@@ -164,6 +164,28 @@ border: 1px solid rgba(107, 107, 107, 0.04);
 text-align: center;
 }
 
+
+/*******************PRODUCTS PAGE*******************/
+
+.products_page {
+  font-family: sans-serif;
+}
+
+.bouquet_product {
+  width: 40vw;
+  height: 40vh;
+}
+
+.veteran_flowers {
+  width: 25vw;
+  height: 40vh;
+}
+
+.wedding_table {
+  width: 25vw;
+  height: 37vh;
+}
+
 /*******************ABOUT PAGE*******************/
 
 .about_me_page {
@@ -227,11 +249,11 @@ text-align: center;
   background-color: #EBBCBC;
   border-style: solid;
   box-shadow: 5px 5px 5px #888;
+  font-family: sans-serif;
 }
 
 .user1 {
   text-transform: capitalize;
-
 }
 
 .user2 {
@@ -276,8 +298,9 @@ text-align: center;
 /**********************CONTACTS PAGE******************/
 
 .contact_page {
+  padding: 20px;
   text-align: center;
-  /*background: url('Wedding_Table.jpg');*/
+  font-family: sans-serif;
 }
 
 .contact_me_box {
@@ -288,14 +311,15 @@ text-align: center;
 text-align: center;
 background: url(../images/diag.jpg),#ebbcbc;
 box-shadow: 5px 5px 5px #888;
-/* border-bottom: 1px solid rgb(235, 188, 188); */
-/* border-bottom: 1px solid rgb(235, 188, 188); */
-/* border-bottom: 1px solid rgb(235, 188, 188);*/
+ /*border-bottom: 1px solid rgb(235, 188, 188);
+ border-bottom: 1px solid rgb(235, 188, 188);
+ border-bottom: 1px solid rgb(235, 188, 188);*/
 }
 
-/*input {
-  box-shadow: 5px 5px 5px #888;
+.facebook_contact {
+text-decoration: underline;
 }
-button {
-  box-shadow: 5px 5px 5px #888;
-}*/
+
+.instagram_contact {
+text-decoration: underline;
+}
