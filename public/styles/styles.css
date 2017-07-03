@@ -173,6 +173,15 @@ text-align: center;
   height: 666px;*/
 }
 
+/*******************DETAILS PAGE*******************/
+
+.details_page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
 /*******************PRODUCTS PAGE*******************/
 
 .products_page {
