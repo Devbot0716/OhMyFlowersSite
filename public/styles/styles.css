@@ -151,6 +151,8 @@ footer {
 .piclinkscontainer div img {
  height: 24vh;
  width: 30vh;
+ /*height: 100%;
+ width: 100%;*/
  background-color: gray;
  display: inline-block;
 margin: 0.5em;
@@ -164,11 +166,21 @@ border: 1px solid rgba(107, 107, 107, 0.04);
 text-align: center;
 }
 
+/*******************IMAGES PAGE*******************/
+
+.flower_images {
+  /*width: 1000px;
+  height: 666px;*/
+}
 
 /*******************PRODUCTS PAGE*******************/
 
 .products_page {
   font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .bouquet_product {
@@ -176,14 +188,24 @@ text-align: center;
   height: 40vh;
 }
 
+.boutonniere_product {
+  width: 60vw;
+  height: 35vh;
+}
+
 .veteran_flowers {
-  width: 25vw;
-  height: 40vh;
+  width: 20vw;
+  height: 42vh;
 }
 
 .wedding_table {
-  width: 25vw;
-  height: 37vh;
+  width: 20vw;
+  height: 25vh;
+}
+
+.corsage_product {
+  width: 60vw;
+  height: 35vh;
 }
 
 /*******************ABOUT PAGE*******************/

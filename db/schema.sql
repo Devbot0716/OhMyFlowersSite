@@ -19,12 +19,12 @@ VALUES ('./images/Veteran.jpg', 'everydayFlowers', 'This is a veteran arrangemen
 
 ('./images/FuneralPiece.jpg', 'funeralArrangement', 'This is a funeral arrangment', 'Funeral Arrangement', '$89.99'),
 
-('./images/bouquet1.jpeg', 'bouquet', 'This is a bouquet', 'bouquet', '$49.99', '6'),
+('./images/bouquet1.jpeg', 'bridalBouquet', 'This is a bouquet', 'bouquet', '$49.99', '6'),
 
-('./images/bouquet2.jpeg', 'bouquet', 'This is a bouquet', 'bouquet', '$59.99', '7')
+('./images/bouquet2.jpeg', 'bridalBouquet', 'This is a bouquet', 'bouquet', '$59.99', '7'),
 
-('./images/bouquet3.jpeg', 'bouquet', 'This is a bouquet', 'bouquet', '$39.99', '8')
+('./images/bouquet3.jpeg', 'bridalBouquet', 'This is a bouquet', 'bouquet', '$39.99', '8'),
 
-('./images/bouquet4.jpeg', 'bouquet', 'This is a bouquet', 'bouquet', '$29.99', '9')
+('./images/bouquet4.jpeg', 'bridalBouquet', 'This is a bouquet', 'bouquet', '$29.99', '9'),
 
-('./images/bouquet5.jpeg', 'bouquet', 'This is a bouquet', 'bouquet', '$69.99', '10')
+('./images/bouquet5.jpeg', 'bridalBouquet', 'This is a bouquet', 'bouquet', '$69.99', '10')
