@@ -1,6 +1,6 @@
 ***********README***********
 
-To start this app, run gulp and live-server simultaneously in your terminal.
+To start this app, run nodemon and live-server simultaneously in your terminal.
 
 Listens on port 3000.
 
