@@ -19,7 +19,7 @@ app.get('/getDetails/:ID', controller.getDetails)
 app.get('/getImages/:Type', controller.getImages)
 
 app.listen(3000, function(){
-  console.log("listening on port 8080")
+  console.log("listening on port 3000")
 })
 
 app.use(function(req, res, next) {

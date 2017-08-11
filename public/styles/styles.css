@@ -1,16 +1,18 @@
 * {
-  /*margin: 0;*/
-  /*padding: 0;*/
+/*  margin: 0;*/
+/*  padding: 0;*/
   text-decoration: none;
   list-style: none;
   color: #6B6B6B;
 }
 
 header div {
+
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+
 }
 
 h3 {
@@ -71,7 +73,7 @@ nav {
   font-size: 25px;
   height: 15px;
   font-family: sans-serif;
-
+  border-radius: 10px;
   /*line-height: 10px;*/
   flex-direction: row;
   align-items: center;
@@ -96,6 +98,7 @@ footer {
   display: flex;
   justify-content: center;
   border-style: ridge;
+  border-radius: 10px;
 }
 
 
@@ -161,7 +164,7 @@ box-shadow: 0.1em 0.1em 0.3em rgba(0, 0, 0, 0.45);
 cursor: pointer;
 background: #fff;
 padding: 0.9em;
-border-radius: 2px;
+border-radius: 5px;
 border: 1px solid rgba(107, 107, 107, 0.04);
 text-align: center;
 }
@@ -169,8 +172,9 @@ text-align: center;
 /*******************IMAGES PAGE*******************/
 
 .flower_images {
-  /*width: 1000px;
-  height: 666px;*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*******************DETAILS PAGE*******************/
@@ -179,7 +183,7 @@ text-align: center;
   display: flex;
   align-items: center;
   flex-direction: column;
-  
+
 }
 
 /*******************PRODUCTS PAGE*******************/
@@ -279,6 +283,7 @@ text-align: center;
 .reviews {
   background-color: #EBBCBC;
   border-style: solid;
+  border-radius: 5px;
   box-shadow: 5px 5px 5px #888;
   font-family: sans-serif;
 }
@@ -342,6 +347,7 @@ text-align: center;
 text-align: center;
 background: url(../images/diag.jpg),#ebbcbc;
 box-shadow: 5px 5px 5px #888;
+border-radius: 10px;
  /*border-bottom: 1px solid rgb(235, 188, 188);
  border-bottom: 1px solid rgb(235, 188, 188);
  border-bottom: 1px solid rgb(235, 188, 188);*/
@@ -349,8 +355,14 @@ box-shadow: 5px 5px 5px #888;
 
 .facebook_contact {
 text-decoration: underline;
+color: #3B5998;
 }
 
 .instagram_contact {
 text-decoration: underline;
+color: #ED4956;
+}
+
+.help_text {
+  font-size: 60px;
 }
