@@ -37,6 +37,4 @@ angular.module('app', ['ui.router'])
         controller: 'detailsCtrl'
       })
 
-
-
   });

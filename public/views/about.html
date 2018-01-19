@@ -1,104 +1,82 @@
 
 <div class="about_me_page">
 
-<div class="about_yu_text">About Yulia</div>
-<br>
-
-    <div class="pic_n_quote">
-<img src="./images/Yulias_Prof_Pic.jpg" class="about_pic">
+  <div class="about_yu_text">About Yulia
+  </div>
+  <br>
+  <div class="pic_n_quote">
+  <img src="./images/Yulias_Prof_Pic.jpg" class="about_pic">
     <h4 class='inspirational_quotes'>
-
-
-
       <div class='quote_author_box'>
-        <span class='quote'>"{{quotes[0].quote}}"</span>
+        <span class='quote'>"{{quotes[0].quote}}"
+        </span>
         <br>
-        <span class='author'>-{{quotes[0].author}}</span>
+        <span class='author'>-{{quotes[0].author}}
+        </span>
       </div>
-
     </h4>
-
-
-
-    </div>
-
-    <br>
-
+  </div>
+  <br>
   <ul class="about_me_info">
-    <li>Hello, my name is Yulia. I'm from Kiev, Ukraine and I've been doing floral work for over 5 years. You could say that I absolutely love making floral arrangments!</li> <br><br>
-
-    <li>I always use quality flowers and materials for my arrangements and designs. I am commited to my work and it will always be clean, beautiful and done like a true professional.</li><br><br>
-
-    <li>I will always try to work with your budget and will offer you at least 2-3 different options for your arrangment so that your can exactly what you want.</li><br><br>
-
-    <li>Working with me, I guarantee you will always get a beautiful and STYLISH arrangement that you, your friends or relatives will be amazed at!</li>
-
+    <li>Hello, my name is Yulia. I'm from Kiev, Ukraine and I've been doing floral work for over 5 years. You could say that I absolutely love making floral arrangments!
+    </li>
+    <br>
+    <br>
+    <li>I always use quality flowers and materials for my arrangements and designs. I am commited to my work and it will always be clean, beautiful and done like a true professional.
+    </li>
+    <br>
+    <br>
+    <li>I will always try to work with your budget and will offer you at least 2-3 different options for your arrangment so that your can exactly what you want.
+    </li>
+    <br>
+    <br>
+    <li>Working with me, I guarantee you will always get a beautiful and STYLISH arrangement that you, your friends or relatives will be amazed at!
+    </li>
   </ul>
-
-
-
 </div>
 
 <div class="reviews">
-
-  <h2 style='text-decoration: underline; color: white'>Reviews by customers:</h2>
-
+  <h2 style='text-decoration: underline; color: white'>Reviews by customers:
+  </h2>
   <br>
-
-<div class='user1_box'>
-
-  <img class="user1_pic" src="{{users1[0].picture.thumbnail}}">
-
-  <p>"Yulia met my needs and she does absolutely gorgeous arrangements that are professionally designed. Thank you, Yulia!"</p>
-
-  <p class='user1'>-{{users1[0].name.first}}
-  {{users1[0].name.last}}
-   <!-- ({{users1[0].location.city}},
-  {{users1[0].nat}})--></p>
-
-</div>
-
+  <div class='user1_box'>
+    <img class="user1_pic" src="{{users1[0].picture.thumbnail}}">
+    <p>"Yulia met my needs and she does absolutely gorgeous arrangements that are professionally designed. Thank you, Yulia!"
+    </p>
+    <p class='user1'>-{{users1[0].name.first}}
+    {{users1[0].name.last}}
+    <!-- ({{users1[0].location.city}},
+    {{users1[0].nat}})-->
+    </p>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class='user2_box'>
+    <img class="user2_pic" ng-src="{{users2[0].picture.thumbnail}}">
+    <p>"We loved the beautiful arrangement Yulia made for our wedding photos! They made all the difference and made our reception just beautiful!"
+    </p>
+    <p class='user2'>-{{users2[0].name.first}}
+    {{users2[0].name.last}}
+    <!--({{users2[0].location.city}},
+    {{users2[0].nat}})-->
+    </p>
+  </div>
 <br>
 <br>
 <br>
-
-<div class='user2_box'>
-
-
-  <img class="user2_pic" ng-src="{{users2[0].picture.thumbnail}}">
-
-  <p>"We loved the beautiful arrangement Yulia made for our wedding photos! They made all the difference and made our reception just beautiful!"</p>
-
-  <p class='user2'>-{{users2[0].name.first}}
-  {{users2[0].name.last}}
-  <!--({{users2[0].location.city}},
-  {{users2[0].nat}})--></p>
-
-</div>
-
-<br>
-<br>
-<br>
-
 <div class='user3_box'>
-
-
   <img class="user3_pic" src="{{users3[0].picture.thumbnail}}">
-
-  <p>"Our funeral arrangment was wonderfully stunning and was completely appriopriate for the occasion. It brought about a special feeling in the room and brought some happiness to a sad occasion. Would definitely recommend Yulia's services and will be ordering from her in the future."</p>
-
+  <p>"Our funeral arrangment was wonderfully stunning and was completely appriopriate for the occasion. It brought about a special feeling in the room and brought some happiness to a sad occasion. Would definitely recommend Yulia's services and will be ordering from her in the future."
+  </p>
   <p class='user3'>-{{users3[0].name.first}}
   {{users3[0].name.last}}
   <!--({{users3[0].location.city}},
-  {{users3[0].nat}})--></p>
-
+  {{users3[0].nat}})-->
+  </p>
 </div>
-
 <br>
-
-
 <input type="text" placeholder="Write a review.." value="">
-
-<button type="button" name="button">Post</button>
-
+<button type="button" name="button">Post
+</button>
 </div>

@@ -1,7 +1,7 @@
 angular.module('app')
   .service('mainSvc', function($http){
 
-    var localhost = 'http://localhost:8080';
+    var localhost = 'http://localhost:3000';
 
     this.getFlowerInfo = function(){ //API Call
       return $http.get(localhost + "/getAll")
