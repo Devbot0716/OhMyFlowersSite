@@ -1,15 +1,16 @@
+// require('dotenv').config();
 const express = require('express')
     , bodyParser = require('body-parser')
     , massive = require('massive')
     , config = require('./config.js')
     , controller = require('./serverCtrl.js')
     , cors = require('cors');
-             require('dotenv').config();
 
 const app = express();
 app.use(bodyParser.json());
+app.use(express.static('./public'));
 app.use(cors());
-massive(process.env.CONNECTION_STRING).then(db =>
+massive(config.database).then(db =>
     app.set('db', db)).catch((err) =>
     console.log(err));
 
@@ -26,7 +27,6 @@ app.use((req, res, next)=> {
   next();
 });
 
-const port = process.env.PORT || 3000
-app.listen(port, ( )=>{
-  console.log("listening on port " + port);
+app.listen(3000, ( )=>{
+  console.log("listening on port 3000");
 });
